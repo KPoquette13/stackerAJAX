@@ -1,3 +1,13 @@
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
 .container {
 	margin: 3em auto;
 	width: 600px;
@@ -38,9 +48,22 @@
 	border: 1px solid black;
 	padding: 5px;
 	margin: 0 auto 1em auto;
+	background:#E5E5E5;
 }
 
 .error {
 	background-color: #F78181;
 	padding: 1em;
+}
+
+.asker-details {
+	-webkit-margin-before:0;
+	-webkit-margin-after:0;
+}
+
+.profile-image {
+	margin-right:8px;
+	height:4.5em;
+	width:4.5em;
+	float:left;
 }
